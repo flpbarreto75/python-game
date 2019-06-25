@@ -1,6 +1,4 @@
-# Player object definition
-
-class Player:
+class Enemy:
     def __int__(self, name, level, power, special, life):
         self.name = name
         self.life = life
