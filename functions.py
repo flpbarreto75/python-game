@@ -9,10 +9,10 @@ player = Player()
 enemy = Enemy()
 # Defining the player name
 
-def player_name():
-    print ("Please enter your name :")
-    name = raw_input()
-    print name
+def player_name(name):
+    #print ("Please enter your name :")
+    #name = raw_input()
+    #print name
     player.name = name
 
 
@@ -69,19 +69,19 @@ def special_add(who, special):
     print who.name
     print who.special
 
-# Functions calls
-print "########################"
-print "Player info"
-player_name()
-set_player()
-print "########################"
-print "########################"
-print "Enemy info"
-set_enemy("enem", 10, "none", 3, 1)
-print "########################"
-
-life_increase(player, 6)
-
-damage(player, player.life, enemy.power)
-
-special_add(player, "life")
+# # Functions calls
+# print "########################"
+# print "Player info"
+# player_name()
+# set_player()
+# print "########################"
+# print "########################"
+# print "Enemy info"
+# set_enemy("enem", 10, "none", 3, 1)
+# print "########################"
+#
+# life_increase(player, 6)
+#
+# damage(player, player.life, enemy.power)
+#
+# special_add(player, "life")
