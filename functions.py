@@ -23,11 +23,7 @@ def set_player():
     player.power = 1
     player.level = 1
 
-    print "Name ", player.name
-    print "Life ", player.life
-    print "Specials ", len(player.special)
-    print "Power ", player.power
-    print "Level ", player.level
+
 
 
 def set_enemy(name, life, specials, power, level):
@@ -42,35 +38,29 @@ def set_enemy(name, life, specials, power, level):
     enemy.power = power
     enemy.level = level
 
-    print "Name ", enemy.name
-    print "Life ", enemy.life
-    print "Specials ", len(enemy.special)
-    print "Power ", enemy.power
-    print "Level ", enemy.level
+
 
 
 def damage(who, life, damage):
 
     who.life = life-damage
 
-    print who.name, " took ", damage, "damage : ", who.life, "remained"
+    print (who.name, " took ", damage, "damage : ", who.life, "remained")
     if who.life == 0:
-        print who.name, "dies"
+        print (who.name, "dies")
 
 
 def life_increase(who, amount):
     who.life = who.life + amount
-    print who.name, "got", amount, "added to life points"
-    print "Life :", who.life
+    print (who.name, "got", amount, "added to life points")
+    print ("Life :", who.life)
 
 def special_add(who, special):
 
     who.special.append(special)
-    print who.name
-    print who.special
 
 # # Functions calls
-# print "########################"
+# print "######################## "
 # print "Player info"
 # player_name()
 # set_player()
